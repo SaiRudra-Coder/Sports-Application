@@ -1,0 +1,35 @@
+2023-02-10 12:34:18 INFO  CommonForAll:67 - Select your option: 
+2023-02-10 12:34:39 INFO  mainEngineForAll:840 - Your Selected Option is : Crickbuzz-API
+2023-02-10 12:34:39 INFO  mainEngineForAll:30 - Welcome to Cricbuzz-Api
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 1.Matches
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 2.Schedules
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 3.Series
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 4.Teams
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 5.Players
+2023-02-10 12:34:40 INFO  mainEngineForAll:42 - 6.Stats
+2023-02-10 12:34:40 INFO  CommonForAll:67 - Select your option: 
+2023-02-10 12:34:41 INFO  mainEngineForAll:47 - Your Selected Option is : Schedules
+2023-02-10 12:34:41 INFO  CommonForAll:145 - a.international
+2023-02-10 12:34:41 INFO  CommonForAll:145 - b.league
+2023-02-10 12:34:41 INFO  CommonForAll:145 - c.domestic
+2023-02-10 12:34:41 INFO  CommonForAll:145 - d.women
+2023-02-10 12:34:41 INFO  CommonForAll:67 - Choose your option:
+2023-02-10 12:34:44 ERROR CommonForAll:80 - Invaild user selections. please select again.
+2023-02-10 12:34:44 INFO  CommonForAll:67 - Choose your option:
+2023-02-10 12:34:45 ERROR CommonForAll:80 - Invaild user selections. please select again.
+2023-02-10 12:34:45 INFO  CommonForAll:67 - Choose your option:
+2023-02-10 12:34:48 INFO  CommonForAll:149 - Your Choosen Option is : women
+2023-02-10 12:34:48 INFO  Schedules:28 - URL= : https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/women
+2023-02-10 12:34:52 INFO  Schedules:49 - 1 . 5850 - FRI, FEB 10 2023 - Singapore Women tour of Cambodia, 2023
+2023-02-10 12:34:52 INFO  Schedules:49 - 2 . 4840 - FRI, FEB 10 2023 - ICC Womens T20 World Cup 2023
+2023-02-10 12:34:52 ERROR Schedules:62 - No data inside this field
+2023-02-10 12:34:52 INFO  Schedules:49 - 3 . 5850 - SAT, FEB 11 2023 - Singapore Women tour of Cambodia, 2023
+2023-02-10 12:34:52 INFO  Schedules:49 - 4 . 4840 - SAT, FEB 11 2023 - ICC Womens T20 World Cup 2023
+2023-02-10 12:34:52 INFO  Schedules:49 - 5 . 5850 - SUN, FEB 12 2023 - Singapore Women tour of Cambodia, 2023
+2023-02-10 12:34:52 INFO  Schedules:49 - 6 . 4840 - SUN, FEB 12 2023 - ICC Womens T20 World Cup 2023
+2023-02-10 12:34:52 INFO  Schedules:49 - 7 . 4840 - MON, FEB 13 2023 - ICC Womens T20 World Cup 2023
+2023-02-10 12:34:52 ERROR Schedules:62 - No data inside this field
+2023-02-10 12:34:52 INFO  Schedules:49 - 8 . 4840 - TUE, FEB 14 2023 - ICC Womens T20 World Cup 2023
+2023-02-10 12:34:55 INFO  CommonForAll:238 - File Created !!
+2023-02-10 12:34:55 INFO  CommonForAll:67 - Do you want continue [Yes/No]: 
+2023-02-10 12:34:59 ERROR mainEngineForAll:138 - Thanks for using crickbuzz api.

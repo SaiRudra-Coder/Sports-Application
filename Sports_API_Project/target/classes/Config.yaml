@@ -1,0 +1,342 @@
+Crickbuzz:
+ match_url: "https://cricbuzz-cricket.p.rapidapi.com/matches/v1/"
+ api_key: "fabf0d1926msh1fe0682723011f5p11293bjsnb77f1b98434c"
+ api_host: "cricbuzz-cricket.p.rapidapi.com" 
+ info_url: "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/"
+ commen_url: "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/"
+ overs_url: "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/"
+ score_url: "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/"
+ team_url: "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/"
+ schedule_url: "https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/"
+ series_url: "https://cricbuzz-cricket.p.rapidapi.com/series/v1/"
+ series_match_url: "https://cricbuzz-cricket.p.rapidapi.com/series/v1/"
+ squard_url: "https://cricbuzz-cricket.p.rapidapi.com/series/v1/"
+ player_url: "https://cricbuzz-cricket.p.rapidapi.com/series/v1/"
+ points_table_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/series/"
+ stat_filter_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/series/"
+ stats_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/series/"
+
+ teams_url: "https://cricbuzz-cricket.p.rapidapi.com/teams/v1/"
+#team_schedule:https://cricbuzz-cricket.p.rapidapi.com/teams/v1/
+#team_results:https://cricbuzz-cricket.p.rapidapi.com/teams/v1/
+
+ players_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/player/trending"
+ players_comm_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/player/"
+
+ stats_ranking_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/rankings/"
+ stats_reFilter_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/topstats"
+ stats_reco_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/topstats/0"
+ stats-sta_url: "https://cricbuzz-cricket.p.rapidapi.com/stats/v1/iccstanding/team/matchtype/"
+ matchList:
+  get_matchListHeadings:
+   - "MATCH ID"
+   - "SERIES ID"
+   - "SERIES NAME"
+   - "STATE"
+   - "STATUS"
+  get_matchInfoHeadings:
+   - "TEAM ID"
+   - "TEAM NAME"
+   - "MATCH FORMAT"
+   - "MATCHDESCRIPTION" 
+  get_matchTeamHeadings:
+   - "PLAYER ID"
+   - "PLAYER NAME"
+   - "ROLE"
+   - "CAPTAIN"
+   - "KEEPER"
+  get_matchCommentriesHeadings:
+   - "TOSS WINNER NAME"
+   - "CHOOSEN OPTION"
+   - "MATCH WINNING TEAM"
+  get_matchScorecardHeadings1:
+   - "BATSMEN ID"
+   - "BATSMEN NAME"
+   - "RUNS"
+   - "WICKET"
+  get_matchScorecardHeadings2:
+   - "BOWLER ID"
+   - "BOWLER NAME"
+   - "RUNS"
+   - "WICKET"
+  get_matchScorecardHeadings3:
+   - "BATSMAN NAME"
+   - "WICKET NUM"
+   - "WKT OVER"
+ matches_excel: "matches_multisheet.xlsx"
+
+ ScheduleHeadings:
+  - "SERIES ID" 
+  - "DATE"
+  - "SERIES NAME"
+ Schedule_excel: "Schedules.xlsx"
+ 
+ Series:
+  getSeries:
+   - "SERIES ID"
+   - "DATE"
+   - "SERIES NAME"
+  getMatches:
+   - "SERIES ID"
+   - "MATCH ID"
+   - "MATCH FORMAT"
+   - "KEY"
+   - "SERIES NAME"
+   - "STATE"
+   - "STAUS"
+  getSquad:
+   - "SQUAD ID"
+   - "SQUAD TYPE"
+   - "SERIES NAME"
+  getPlayers:
+   - "ID"
+   - "NAME"
+   - "ROLE"
+   - "CAPTAIN"
+   - "BATTING STYLE" 
+   - "BOWLING STYLE"
+  getPointtable:
+   - "TEAM ID"
+   - "TEAM NAME"
+   - "MATCHS PLAYED"
+   - "MATCHES WON"
+   - "MATCHES LOST"
+   - "POINTS"
+   - "MATCH ID"
+   - "MATCH NAME"
+   - "OPPONENT"
+   - "RESULTS"
+  getStatFilter:
+   - "HEADER"
+   - "VALUE"
+   - "CATEGORY"
+  getStats:
+   - "BATSMEN"
+   - "MATCHES"
+   - "INNINGS"
+   - "RUNS"
+   - "AVG" 
+ Series_excel: "Series_multiSheets.xlsx"
+ 
+ Teams:
+  getTeamsList:
+   - "TEAM ID"
+   - "TEAM NAME"
+  getTeamSchedule:
+   - "SERIES ID"
+   - "MATCH ID"
+   - "SERIES NAME"
+   - "MATCH DESCRIPTION"
+  getTeamResults:
+   - "SERIES ID"
+   - "MATCH ID"
+   - "SERIES NAME"
+   - "MATCH DESCRIPTION"
+   - "RUNS"
+   - "WICKETS"
+   - "OVERS"
+  getTeamPlayers:
+   - "ID"
+   - "NAME"
+   - "BATTING STYLE"
+   - "BOWLING STYLE"
+ Teams_excel: "Teams_muiltiSheets.xlsx" 
+
+ Players:
+  getPlayersList:
+   - "ID"
+   - "NAME"
+   - "TEAM NAME"
+  getPlayersCareer:
+   - "ID"
+   - "MATCH FORMAT"
+   - "DEBUT MATCH"
+   - "LAST PLAYED"
+  getPlayerBowling:
+   - "VALUES"
+  getPlayerBatting:
+   - "ROWHEADER"
+   - "TEST"
+   - "ODI"
+   - "T20"
+   - "IPL"
+ Players_excel: "players_multiSheet.xlsx"
+
+ Stats:
+  getStatsRankings:
+   - "RANK"
+   - "ID"
+   - "NAME"
+   - "COUNTRY"
+   - "POINTS"
+  getStatsRecordFilter:
+   - "VALUE"
+   - "HEADER"
+   - "CATEGORY"
+  getStatsRecord:
+   - "VALUES"
+  getStatsStandings:  
+   - "HEADERS"
+   - "VALUES"
+ Stats_excel: "Stat_multiSheet.xlsx"
+  
+  
+
+GolfLeaderBoard:
+ pga_ranking_url: "https://golf-leaderboard-data.p.rapidapi.com/projected-rankings-pga/"
+ api_key: "fabf0d1926msh1fe0682723011f5p11293bjsnb77f1b98434c"
+ api_host: "golf-leaderboard-data.p.rapidapi.com" 
+
+ world_ranking_url: "https://golf-leaderboard-data.p.rapidapi.com/world-rankings"
+ tours_url: "https://golf-leaderboard-data.p.rapidapi.com/tours"
+
+ tours_ran_url: "https://golf-leaderboard-data.p.rapidapi.com/tour-rankings/"
+ tours_fix_url: "https://golf-leaderboard-data.p.rapidapi.com/fixtures/"
+ tours_entryList_url: "https://golf-leaderboard-data.p.rapidapi.com/entry-list/"
+ tours_leaderboard_url: "https://golf-leaderboard-data.p.rapidapi.com/leaderboard/"
+ tours_pgascore_url: "https://golf-leaderboard-data.p.rapidapi.com/scorecard/"
+ PgaRankings:
+  - "PLAYER ID"
+  - "TITLE"
+  - "FIRST NAME"
+  - "LAST NAME"
+  - "PROJECT POINTS"
+  - "CURRENT RANK"
+ PgaRankings_excel: "pgr_rankings_multisheet.xlsx"
+
+ WorldRankings:
+  - "PLAYER NAME"
+  - "PLAYER ID"
+  - "TOTAL POINTS"
+  - "TOTAL POSITION"
+ WorldRankings_excel: "World_Ranking_multisheet.xlsx"
+
+ Tours:
+  getTours:
+   - "SEASON ID"
+   - "TOUR ID"
+   - "TOUR NAME"
+  getTourRank:
+   - "PLAYER ID"
+   - "PLAYER NAME"
+   - "NUM.EVENTS"
+   - "NUM.WINS"
+   - "POINTS"
+   - "POSITION"
+  getFixtures:
+   - "TOURNAMENT ID"
+   - "TOURNAMENT TYPE"
+   - "NAME"
+   - "COUNTRY"
+  getEntryList:
+   - "PLAYER ID"
+   - "FIRST NAME"
+   - "LAST NAME"
+   - "COUNTRY"
+  getLeaderboard:
+   - "PLAYER ID"
+   - "FIRST NAME"
+   - "LAST NAME"
+   - "COUNTRY"
+   - "HOLES PLAYED"
+   - "CURRENT ROUND"
+   - "STATUS"
+   - "STROKES"
+   - "ROUND NUMBER"
+   - "COURSE NUMBER"
+   - "POSITION ROUND"
+   - "STROKES"
+   - "POSITION"
+  getPgaScoreCard:
+   - "NUM"
+   - "ID"
+   - "YARDS"
+   - "PAR"
+   - "HOLE NUM"
+   - "YARDS"  
+ Tours_excel: "Tours_multisheet.xlsx"
+
+
+Horse:
+ RaceCards_url: "https://horse-racing.p.rapidapi.com/racecards?date=2020-03-12"
+ api_key: "fabf0d1926msh1fe0682723011f5p11293bjsnb77f1b98434c"
+ api_host: "horse-racing.p.rapidapi.com"
+
+ race_url: "https://horse-racing.p.rapidapi.com/race/"
+ horseStats_url: "https://horse-racing.p.rapidapi.com/horse-stats/"
+ results_url: "https://horse-racing.p.rapidapi.com/results?date=2020-03-13"
+
+ jockeys_url: "https://horse-racing.p.rapidapi.com/jockeys-win-rate?last_days="
+ trainer_url: "https://horse-racing.p.rapidapi.com/trainers-win-rate?last_days="
+
+ Query_race_url: "https://horse-racing.p.rapidapi.com/query-races"
+ Query_horse_url: "https://horse-racing.p.rapidapi.com/query-horses?name="
+ Racecards:
+  getRacecards:
+   - "RACE ID"
+   - "COURCE"
+   - "TITLE"
+   - "DISTANCE"
+   - "CLASS"
+   - "PRIZE"
+  getRacedetailsInfo:
+   - "HORSE ID"
+   - "HORSE"
+   - "OWNER"
+   - "JOCKEY"
+   - "TRAINER"
+   - "AGE"
+   - "POSITION"
+  getHorseStats:
+   - "RACE"
+   - "COURCE"
+   - "TRAINER"
+   - "JOCKEY"
+   - "WEIGHT"
+   - "DISTANCE"
+   - "CLASS"
+   - "POSITION"
+   - "STARTING PRICE"
+   - "PRIZE"
+ Racecards_excel: "RaceCards_multiSheets.xlsx"
+ 
+ Results:
+  getResults:
+   - "RACE ID"
+   - "COURCE"
+   - "TITLE"
+   - "DISTANCE"
+   - "PRIZE"
+ Results_excel: "Results_multiSheets.xlsx"   
+  
+ JockeyWinRate:
+  - "JOCKEY"
+  - "WINS"
+  - "RUNS"
+  - "WIN-RATE"
+ Jockey_excel: "JockeyWinRate_multiSheets.xlsx"  
+
+ TrainersWinRate:
+  - "TRAINERS"
+  - "WINS"
+  - "RUNS"
+  - "WIN-RATE"  
+ TrainersWinRate_excel: "TrainersWinRates_multiSheets.xlsx"
+   
+ Query:
+  getQueryRaces:
+   - "RACE ID"
+   - "NAME"
+   - "COURCE"
+   - "DISTANCE"
+   - "CLASS" 
+  getQueryHorses:
+   - "HORSE ID"
+   - "HORSE"
+ Query_excel: "QueryHorses_multiSheets.xlsx"
+ 
+ 
+ 
+ 
+ 
+ 
